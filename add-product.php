@@ -82,26 +82,26 @@
                             <span v-if="heightIsValid">Height</span>
                             <span v-else class="text-danger">Please enter valid height</span>
                         </label>
-                        <input :class="{inValid:!heightIsValid}" class="form-control" v-model="height" name="height" type="number" step="0.01" placeholder="Enter height" required>
+                        <input :class="{inValid:!heightIsValid}" id="height" class="form-control" v-model="height" name="height" type="number" step="0.01" placeholder="Enter height" required>
                     </div>
                     <div v-if="type==='Furniture'" class="col-md-4">
                         <label for="width">
                             <span v-if="widthIsValid">Width</span>
                             <span v-else class="text-danger">Please enter valid width</span>
                         </label>    
-                        <input :class="{inValid:!widthIsValid}" class="form-control"v-model="width" name="width" type="number" step="0.01" placeholder="Enter width" required>
+                        <input :class="{inValid:!widthIsValid}" id="width" class="form-control"v-model="width" name="width" type="number" step="0.01" placeholder="Enter width" required>
                     </div>
                     <div v-if="type==='Furniture'" class="col-md-4">
                             <label for="length">
                                 <span v-if="lengthIsValid">Length</span>
                                 <span v-else class="text-danger">Please enter valid length</span>
                             </label>   
-                            <input :class="{inValid:!lengthIsValid}" class="form-control"v-model="length" name="length" type="number" step="0.01" placeholder="Enter length" required>
+                            <input :class="{inValid:!lengthIsValid}" id="length" class="form-control"v-model="length" name="length" type="number" step="0.01" placeholder="Enter length" required>
                 
                     </div>
                     <div class="col-12 mt-4">
-                        <button class="btn btn-success" type="submit" form="product_form">SAVE</button>
-                        <a href="." class="btn btn-danger ms-2">CANCEL</a>
+                        <button class="btn btn-success" type="submit" form="product_form">Save</button>
+                        <a href="." class="btn btn-danger ms-2">Cancel</a>
                     </div>
             </form>
         </div>
